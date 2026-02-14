@@ -1,0 +1,94 @@
+### 1️⃣ Write syntax to create a React Functional Component.
+
+---
+function MyComponent() {
+  return (<div>Hello World</div>);
+}
+export defolt MyComponent
+
+
+---
+
+### 2️⃣ Write syntax of `useState`.
+
+---
+import { useState } from 'react';
+const [count, setCount] = useState(0);
+
+---
+
+### 3️⃣ Write syntax of `useEffect`.
+
+---
+import { useEffect } from 'react';
+useEffect(() => {
+  console.log('Component rendered');
+});
+
+---
+
+### 4️⃣ Write syntax of `useEffect` with dependency array.
+
+---
+useEffect(() => {
+  console.log(count);
+}, [count]);
+
+---
+
+### 5️⃣ Write syntax of `useEffect` that runs only once.
+
+---
+useEffect(() => {
+  console.log('Runs only once');
+}, []);
+
+---
+
+### 6️⃣ Write syntax to install and setup React Router.
+
+---
+# Install
+npm install react-router-dom
+
+# Setup
+import { BrowserRouter } from 'react-router-dom';
+
+---
+
+### 7️⃣ Write basic routing setup using `BrowserRouter`, `Routes`, and `Route`.
+
+---
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+  </Routes>
+</BrowserRouter>
+
+---
+
+### 8️⃣ Write syntax for navigation using `Link`.
+
+---
+import { Link } from 'react-router-dom';
+<Link to="/about">About</Link>
+
+---
+
+### 9️⃣ Write syntax to get route parameter using `useParams`.
+
+---
+import { useParams } from 'react-router-dom';
+const { id } = useParams();
+
+---
+
+### 🔟 Write syntax for conditional rendering using ternary operator in JSX.
+
+---
+<div>
+  {isLoggedIn ? 'Welcome User' : 'Please Login'}
+</div>
